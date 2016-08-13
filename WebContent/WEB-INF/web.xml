@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<servlet>
+		<servlet-name>SearchService</servlet-name>
+		<display-name>SearchRpcService</display-name>
+		<servlet-class>com.xwood.search.service.impl.SearchServiceImpl </servlet-class>
+		<init-param>
+			<param-name>home-api</param-name>
+			<param-value>com.xwood.search.service.ISearchService</param-value>
+		</init-param>
+		<init-param>
+			<param-name>home-class</param-name>
+			<param-value>com.xwood.search.service.impl.SearchServiceImpl</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchService</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>	 
+</web-app>
